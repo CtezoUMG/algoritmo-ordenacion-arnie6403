@@ -1,26 +1,47 @@
 using System;
+using System.Linq; // Necesario para Enumerable y ToArray()
 
-const int CANTIDAD_ELEMENTOS = 10000;
-Algoritmo ordenador = new Algoritmo();
-
-// 1. Generar datos (Semilla 42 para que todos tengan el mismo desorden)
-int[] datos = ordenador.GenerarNumeros(CANTIDAD_ELEMENTOS);
-
-Console.WriteLine($"--- Auditoría de Algoritmos .NET 10 ---");
-Console.WriteLine($"Procesando: {CANTIDAD_ELEMENTOS:N0} números.");
-
-// 2. El alumno implementa esto en la clase Algoritmo
-ordenador.BubbleSort(datos);
-
-
-
-// 3. Validación de integridad
-if (ordenador.EstaOrdenado(datos))
+public class Algoritmo
 {
-    Console.WriteLine("VALIDATION: SUCCESS");
-}
-else
-{
-    Console.WriteLine("VALIDATION: FAILED");
-    Environment.Exit(1); // Crucial para el Autograding de GitHub
+    public int[] GenerarNumeros(int n)
+    {
+        // Semilla fija (42) garantiza que todos los alumnos ordenen la misma secuencia
+        Random r = new Random(42);
+        return Enumerable.Range(0, n).Select(_ => r.Next(0, 50000)).ToArray();
+    }
+
+
+    public bool EstaOrdenado(int[] arr)
+    {
+        if (arr == null || arr.Length == 0) return true;
+
+        for (int i = 0; i < arr.Length - 1; i++)
+        {
+            // Si el actual es mayor al siguiente, no está ordenado
+            if (arr[i] > arr[i + 1]) return false;
+        }
+        return true;
+    }
+
+    public void BubbleSort(int[] arr)
+    {
+        if (arr == null || arr.Length <= 1)
+            return;
+
+        int n = arr.Length;
+
+        for (int i = 0; i < n - 1; i++)
+        {
+            for (int j = 0; j < n - i - 1; j++)
+            {
+                if (arr[j] > arr[j + 1])
+                {
+                    // Intercambio (Swap)
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+    }
 }
