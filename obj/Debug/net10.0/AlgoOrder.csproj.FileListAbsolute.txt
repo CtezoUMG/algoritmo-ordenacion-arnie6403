@@ -1,0 +1,15 @@
+C:\Workspace\algoritmo-ordenacion-arnie6403\bin\Debug\net10.0\AlgoOrder.exe
+C:\Workspace\algoritmo-ordenacion-arnie6403\bin\Debug\net10.0\AlgoOrder.deps.json
+C:\Workspace\algoritmo-ordenacion-arnie6403\bin\Debug\net10.0\AlgoOrder.runtimeconfig.json
+C:\Workspace\algoritmo-ordenacion-arnie6403\bin\Debug\net10.0\AlgoOrder.dll
+C:\Workspace\algoritmo-ordenacion-arnie6403\bin\Debug\net10.0\AlgoOrder.pdb
+C:\Workspace\algoritmo-ordenacion-arnie6403\obj\Debug\net10.0\AlgoOrder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\algoritmo-ordenacion-arnie6403\obj\Debug\net10.0\AlgoOrder.AssemblyInfoInputs.cache
+C:\Workspace\algoritmo-ordenacion-arnie6403\obj\Debug\net10.0\AlgoOrder.AssemblyInfo.cs
+C:\Workspace\algoritmo-ordenacion-arnie6403\obj\Debug\net10.0\AlgoOrder.csproj.CoreCompileInputs.cache
+C:\Workspace\algoritmo-ordenacion-arnie6403\obj\Debug\net10.0\AlgoOrder.sourcelink.json
+C:\Workspace\algoritmo-ordenacion-arnie6403\obj\Debug\net10.0\AlgoOrder.dll
+C:\Workspace\algoritmo-ordenacion-arnie6403\obj\Debug\net10.0\refint\AlgoOrder.dll
+C:\Workspace\algoritmo-ordenacion-arnie6403\obj\Debug\net10.0\AlgoOrder.pdb
+C:\Workspace\algoritmo-ordenacion-arnie6403\obj\Debug\net10.0\AlgoOrder.genruntimeconfig.cache
+C:\Workspace\algoritmo-ordenacion-arnie6403\obj\Debug\net10.0\ref\AlgoOrder.dll
